@@ -1,0 +1,4 @@
+Justnotes
+=========
+
+Minimalist Note Manager
