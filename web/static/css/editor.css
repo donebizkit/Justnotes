@@ -1,0 +1,115 @@
+.note-editor {}
+
+.note-editor table tr {
+	vertical-align: top;
+}
+
+.note-editor .note {
+	display: block;
+}
+
+/* root level elements */
+.note-editor .note > div > div,
+.note-editor .note > div > table {
+	.padding-left: 5px;
+	margin-left: 20px;
+}
+
+/*
+.note-editor .note div,
+.note-editor .note table {
+	.margin-bottom: 5px;
+}
+*/
+
+.note-editor .note .note-title {
+	font-weight: 600;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #333;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.note-editor .note .note-title input {
+	width: 50px;
+	font-family: monospace;
+}
+
+.note-editor .note-el-highlight {
+	min-height: 20px;
+	border-left: 5px double #3366CC;
+	padding-left: 5px;
+}
+
+.note-editor .note textarea {
+	width: 50px;
+	font-family: monospace;
+}
+
+.note-editor .note textarea.url,
+.note-editor .note textarea.img {
+	width: 150px;
+}
+
+.note-editor .note div.edit_div {
+	font-weight: normal;
+	display: none;
+}
+
+.note-editor .note .note-el-heading {
+	font-weight: 600;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.note-editor .note .note-el-table {
+	border-collapse: collapse;
+}
+
+.note-editor .note .note-el-table td {
+	border: 1px solid #ccc;
+	vertical-align: top;
+	white-space: nowrap;
+	padding: 5px;
+}
+
+.note-editor .note .note-el-columns {
+	white-space: nowrap;
+}
+
+.note-editor .note .note-el-columns > .column {
+	border-left: 5px solid #666;
+	padding: 5px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.note-editor .note .label-info {
+  background-color: #eee;
+  color:#555;
+}
+
+
+
+.note-editor .help {
+	margin-left:20px;
+	color: #000;
+	text-align: left;
+	border-left: 2px solid #ddd;
+	padding-left: 10px;
+}
+
+.note-editor .help-selection {
+	font-weight: 200;
+	font-size:16px;
+	color: #aaa;
+	margin-bottom: 10px;
+}
+
+.note-editor .help-body {}
+
+.note-editor .help-body hr {
+	border: 1px solid black;
+}

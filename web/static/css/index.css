@@ -1,0 +1,38 @@
+body {
+	background-color: #fff;
+	font-size: 14px;
+	font-family: monospace;
+}
+
+.intro-container {
+	margin-top: 80px;
+	background-color: #fff;
+}
+
+.intro-container .logo {
+	color: #5C85AD;
+}
+
+.intro-container .info {
+	margin-bottom: 20px;
+}
+
+
+.forms-container {
+	padding-top:20px;
+}
+
+.form-sign .t1{
+	width: 100px;
+	text-align: right;
+	display: inline-block;
+	padding-right: 10px;
+	.font-size: 16px;
+}
+
+.form-sign .t2{
+	width: 300px;
+	text-align: left;
+	display: inline-block;
+	.padding-top: 5px;
+}

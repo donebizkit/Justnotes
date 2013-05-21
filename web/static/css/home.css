@@ -1,0 +1,159 @@
+body {
+	background-color: #fff;
+	font-family: monospace;
+	font-size: 14px;
+}
+
+.menu {
+	padding: 5px 0px 5px 20px;
+	color:#000;
+	margin: 5px 0px 20px 100px;
+}
+
+.menu .menu-brand {
+	display: inline-block;
+	margin-right:10px;
+	.border-bottom:2px solid #6685C2;
+	cursor: pointer;
+}
+.menu .menu-brand:hover {
+	color:#5C85AD;
+}
+
+.menu .menu-item {
+	display: inline-block;
+	margin-right:10px;
+	cursor: pointer;
+}
+.menu .menu-item:hover {
+	color:#5C85AD;
+}
+
+.menu .menu-item input {
+	width: 200px;
+	height:15px;
+	border: 1px solid #eee;
+	position: relative;
+	top:5px;
+}
+
+.menu .menu-item input:focus {
+	border: 1px solid #478FB2;
+}
+
+.sub-menu {
+	.border-top:2px solid #6685C2;
+	background-color:#F0F3F9;
+	.position:relative;
+	.left: -100px;
+}
+
+.sub-menu-item {
+	margin: 10px;
+	padding:10px;
+}
+
+.note-editor-container {
+	border-left: 80px solid #85A3C2;
+	margin: 50px 0px 0px 10px;
+	margin-bottom:100px;
+	white-space: nowrap;
+}
+
+.dashboard-summary {
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 50px;
+	.font-weight: bold;
+}
+
+.dashboard {}
+
+.dashboard .timestamp {
+	background-color: #eee;
+	color: #333;
+	text-align: center;
+	padding: 20px;
+	margin: 0px 10px 10px 10px;
+}
+
+.dashboard .note {
+	display: block;
+	margin-bottom: 50px;
+	.border-left: 20px solid #eee;
+	border-left: 1px solid #eee;
+}
+
+.dashboard .panel-highlight .note {
+	border-left: 10px solid #00CC00;
+}
+
+/* root level elements */
+.dashboard .note > div > div,
+.dashboard .note > div > table {
+	margin-left: 20px;
+}
+
+.dashboard .note .note-title {
+	font-weight: 600;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #333;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.dashboard .note .note-el-heading {
+	font-weight: 600;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.dashboard .note .note-el-table {
+	border-collapse: collapse;
+}
+
+.dashboard .note .note-el-table td {
+	border:1px solid #ccc;
+	vertical-align: top;
+	white-space: nowrap;
+	padding: 5px;
+}
+
+.dashboard .note .note-el-columns {
+	white-space: nowrap;
+}
+
+.dashboard .note .note-el-columns > .column {
+	border-left: 5px solid #666;
+	padding: 5px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.dashboard .note .label-info {
+  background-color: #eee;
+  color:#555;
+}
+
+
+.map {
+	position: fixed;
+	top: 0px;
+	right: 50px;
+	padding: 20px 50px 20px 40px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: #666;
+	color: #eee;
+	height: 100%;
+	overflow: auto;
+}
+
+.map .entry {
+	font-weight: bold;
+	.border: 1px solid #ccc;
+	.padding:5px;
+	margin-bottom: 5px;
+}

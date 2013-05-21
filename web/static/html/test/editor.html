@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/res/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/editor.css">
+</head>
+<body>
+	<style type="text/css">
+		body{
+			margin: 20px;
+			font-size: 14px;
+			font-family: monospace;
+		}
+	</style>
+
+
+	<div id="editor-container">
+	</div>
+
+	<script src="/res/js/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="/res/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/res/js/events.js"></script>
+	<script type="text/javascript" src="/res/js/kb.js"></script>
+	<script type="text/javascript" src="/res/js/View/Editor.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			var editor = new View.Editor.Editor($("#editor-container"));
+
+			editor.bind('save', function(e, data) {
+				$.post("/ajax/data?req=save", JSON.stringify(data), function(response) {
+					console.log(response)
+				})
+			})
+		})
+	</script>
+</body>
+</html>

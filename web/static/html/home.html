@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>justnotes.cc</title>
+    <link rel="stylesheet" type="text/css" href="/res/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/res/css/editor.css">
+</head>
+<body>
+
+	<div class="menu">
+		<div id="menu-brand" class="menu-brand">
+			justnotes.cc
+		</div>
+		<div class="menu-item">
+			<span id="help">| help | </span>
+		</div>
+		<div class="menu-item">
+			<input id="search" type="text">
+		</div>
+		<div class="menu-item">
+			<span id="contact"> | contact</span>
+		</div>
+		<div id="logout" class="menu-item">
+			<span> | logout</span>
+		</div>
+		<div id="sub-menu" class="sub-menu">
+			<div id="hint-1" class="sub-menu-item hide">
+				<button type="button" id="close" class="close">&times;</button>
+				<div class="pull-left">
+					<strong>Commands:</strong>
+					<br/>
+					<div class="pull-left" style="padding-right:20px">
+						Create a new note
+						<br/>
+						Edit a selected note
+						<br/>
+						Delete a selected note
+						<br/>
+						Toggle map
+					</div>
+				</div>
+				<div class="pull-left">
+					<br/>
+					<span class="label label-info">ctrl shift Z</span>
+					||
+					<span class="label label-info">ctrl shift N</span>
+					<br/>
+					<span class="label label-info">enter</span>
+					||
+					<span class="label label-info">ctrl shift E</span>
+					<br/>
+					<span class="label label-info">ctrl shift D</span>
+					||
+					<span class="label label-info">ctrl shift backspace</span>
+					<br/>
+					<span class="label label-info">ctrl shift M</span>
+				</div>
+				<div class="pull-left" style="margin-left:50px;margin-right:100px;">
+				</div>
+				<br style="clear:both"/>
+			</div>
+			<div id="hint-2" class="sub-menu-item hide">
+				<button type="button" id="close" class="close">&times;</button>
+				If you have any comment or feedback, we would love to hear from you.
+				<br/><br/>
+				<strong>Contact Us:</strong>
+				<br/>
+				justnotescc@gmail.com
+			</div>
+		</div>
+	</div>
+
+	<div id="note-editor-container" class="note-editor-container hide">
+	</div>
+
+	<div id="map" class="map hide">
+	</div>
+
+	<div id="dashboard" class="dashboard">
+	</div>
+
+	<form id="form" method="POST" action="/home">
+		<input id="form-key" name="key" type="hidden">
+	</form>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		function enable_google_analytics() {
+			_gaq.push(['_setAccount', 'UA-40666727-1']);
+			_gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		}
+	</script>
+	<script type="text/javascript" src="/res/js/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="/res/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/res/js/shame.js"></script>
+	<script type="text/javascript" src="/res/js/events.js"></script>
+	<script type="text/javascript" src="/res/js/kb.js"></script>
+	<script type="text/javascript" src="/res/js/Model/Notes.js"></script>
+	<script type="text/javascript" src="/res/js/View/Editor.js"></script>
+	<script type="text/javascript" src="/res/js/View/Dashboard.js"></script>
+	<script type="text/javascript" src="/res/js/Controller/Editor.js"></script>
+	<script type="text/javascript" src="/res/js/Controller/Dashboard.js"></script>
+	<script type="text/javascript" src="/res/js/home.js"></script>
+</body>
+</html>
